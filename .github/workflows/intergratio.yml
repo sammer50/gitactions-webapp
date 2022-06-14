@@ -2,6 +2,7 @@
 on: push
 jobs:
   build-project:
+
     name: Build Project
     runs-on: ubuntu-latest
     steps:
