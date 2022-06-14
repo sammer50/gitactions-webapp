@@ -26,7 +26,7 @@ jobs:
       with:
         name: static-site
     - name: Archive content
-      uses: thedoctor@/zip-release@master
+      uses: thedoctor0/zip-release@main
       with:
         filename: site.zip
     - name: Create GitHub release
