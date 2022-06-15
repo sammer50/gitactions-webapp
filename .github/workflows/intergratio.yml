@@ -41,7 +41,7 @@ jobs:
     - name: Upload site content as GitHub release asset
       uses: actions/upload-release-asset@v1
       env:
-        GITHUB_TOKEN: ${{ githb.token }}
+        GITHUB_TOKEN: ${{ github.token }}
       with:
        upload_url: ${{ steps.create-github-release.outputs.upload_url }}
        asset_path: ./site.zip
